@@ -19,12 +19,18 @@ import java.util.Collections;
  * @author chien
  */
 public class lietkecapso {
+    public static int ntcn(int a,int b){
+        if(b!=0){
+            return ntcn(b,a%b);
+        }
+        return a;
+    }
     public static void main(String[] args) throws FileNotFoundException, IOException, ClassNotFoundException {
         ObjectInputStream is=new ObjectInputStream(new FileInputStream("DATA.in"));
         ArrayList<Pair> arr=(ArrayList<Pair>) is.readObject();
         ArrayList<Pair> arr2=new ArrayList<>();
         for(Pair i:arr){
-            if(i.getFirst()<i.getSecond()){
+            if(i.getFirst()<i.getSecond()&& ntcn(i.getFirst(),i.getSecond())==1){
                 arr2.add(i);
             }
         }
