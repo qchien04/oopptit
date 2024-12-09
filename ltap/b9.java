@@ -1,6 +1,8 @@
 
 
 package ontap;
+import java.util.ArrayDeque;
+import java.util.Deque;
 import java.util.Scanner;
 import java.util.Stack;
 
@@ -10,6 +12,7 @@ public class b9 {
         int n = sc.nextInt();
         int ans = 0;
         Stack<Integer> st = new Stack<>();
+        Deque<Integer> dq=new ArrayDeque<>();
         int []cnt = new int[5000006];
         for (int i = 1; i <= n; i++) {
             int x = sc.nextInt();

@@ -24,7 +24,7 @@ public class ghi_list_vao_file {
         list.add("Jhsf00dklT12uhf780LPPZH");
         list.add("AAAAddd0000000000000000001T");
         
-        String fileName = "SV.in";
+        String fileName = "DATA2.in";
         
 //        
 //        ArrayList<SinhVien> arr=new ArrayList<>();
@@ -34,10 +34,22 @@ public class ghi_list_vao_file {
         
         
         ArrayList<Integer> list2 = new ArrayList<>();
-        list2.add(1);
+        list2.add(11);
+        list2.add(101);
+        list2.add(131);
+        list2.add(131);
+         list2.add(101);
         list2.add(2);
         list2.add(1);
+        list2.add(131);
+         list2.add(1);
         list2.add(2);
+        list2.add(11);
+        list2.add(131);
+         list2.add(1);
+        list2.add(2);
+        list2.add(11);
+        list2.add(11);
         try (FileOutputStream fileOut = new FileOutputStream(fileName);
             ObjectOutputStream out = new ObjectOutputStream(fileOut)) {
             
